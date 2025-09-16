@@ -1,25 +1,29 @@
-/* Remove margens e padding padrão, além de ocultar os marcadores */
-.menu-horizontal {
-  margin: 0;
-  padding: 0;
-  list-style: none; /* Remove os marcadores de lista (pontos) */
+*{margin: 0; padding: 0;}
+
+body{
+font-family: arial, helvetica, sans-serif;
+font-size: 12px;
 }
 
-/* Exibe os itens da lista em linha */
-.menu-horizontal li {
-  display: inline-block; /* ou display: flex para os itens */
-  margin-right: 15px; /* Adiciona espaço entre os itens */
+.menu{
+list-style:none;
+border:1px solid #c0c0c0;
+float:left;
 }
 
-/* Estiliza os links para não terem sublinhado e definem sua cor */
-.menu-horizontal li a {
-  text-decoration: none; /* Remove o sublinhado padrão dos links */
-  color: #333; /* Cor do texto do link */
-  padding: 10px 15px; /* Espaçamento interno do link */
+.menu li{
+position:relative;
+float:left;
+border-right:1px solid #c0c0c0;
 }
 
-/* Efeito de hover para quando o mouse passar sobre o item */
-.menu-horizontal li a:hover {
-  background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
-  color: #007bff; /* Cor do texto ao passar o mouse */
+.menu li a{color:#333; text-decoration:none; padding:5px 10px; display:block;}
+
+.menu li a:hover{
+background:#333;
+color:#fff;
+-moz-box-shadow:0 3px 10px 0 #CCC;
+-webkit-box-shadow:0 3px 10px 0 #ccc;
+text-shadow:0px 0px 5px #fff;
 }
+
